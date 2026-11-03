@@ -1,0 +1,24 @@
+{
+ "model": "rmt",
+ "repo": "(new) lucidrains/recurrent-memory-transformer-pytorch 0.7.0",
+ "target_repo": "LM_Dec_Long_RecurrentMemory",
+ "category": "Long",
+ "upstream": "lucidrains/recurrent-memory-transformer-pytorch (MIT), pip 0.7.0",
+ "unified": [
+  "segments of 128 with 16 memory tokens and XL memories; gradients flow across segments (upstream wrapper can also do memory-replay backprop, not used)"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "overfit",
+ "started": "2026-10-21 04:28:15",
+ "smoke": false,
+ "first_ce": 5.717946529388428,
+ "last_ce": 0.0013848645612597466,
+ "passed": true,
+ "pass_loss": 0.5,
+ "steps": 400,
+ "seconds": 48.7,
+ "lr": 0.001,
+ "note": "overfit uses Adam 1e-3 on 4 x 256 bytes; only an implementation check",
+ "bf16": true
+}

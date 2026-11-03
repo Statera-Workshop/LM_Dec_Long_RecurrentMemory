@@ -1,0 +1,83 @@
+{
+ "model": "rmt",
+ "repo": "(new) lucidrains/recurrent-memory-transformer-pytorch 0.7.0",
+ "target_repo": "LM_Dec_Long_RecurrentMemory",
+ "category": "Long",
+ "upstream": "lucidrains/recurrent-memory-transformer-pytorch (MIT), pip 0.7.0",
+ "unified": [
+  "segments of 128 with 16 memory tokens and XL memories; gradients flow across segments (upstream wrapper can also do memory-replay backprop, not used)"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "scaling",
+ "started": "2026-10-21 04:27:09",
+ "smoke": false,
+ "rows": [
+  {
+   "len": 512,
+   "train": {
+    "peak_mb": 481.1,
+    "ms": 208.1,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 53.1,
+    "ms": 76.4,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 1024,
+   "train": {
+    "peak_mb": 892.4,
+    "ms": 417.2,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 53.4,
+    "ms": 150.4,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 2048,
+   "train": {
+    "peak_mb": 1745.3,
+    "ms": 829.2,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 53.9,
+    "ms": 297.9,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 4096,
+   "train": {
+    "peak_mb": 3452.1,
+    "ms": 1676.3,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 54.9,
+    "ms": 609.5,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 8192,
+   "train": {
+    "peak_mb": 6874.6,
+    "ms": 3416.3,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 56.9,
+    "ms": 1222.3,
+    "dtype": "bf16"
+   }
+  }
+ ],
+ "seconds": 30.5
+}
